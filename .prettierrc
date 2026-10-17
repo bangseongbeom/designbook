@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "prettier-plugin-packagejson",
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "overrides": [
+    {
+      "files": "packages/fumadocs/**",
+      "options": { "tailwindStylesheet": "./packages/fumadocs/style.css" }
+    }
+  ]
+}

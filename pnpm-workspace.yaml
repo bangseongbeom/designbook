@@ -1,0 +1,6 @@
+packages:
+  - "examples/*"
+  - "packages/*"
+allowBuilds:
+  esbuild: false
+dedupePeerDependents: false

@@ -1,0 +1,53 @@
+{
+  "name": "@designbook/fumadocs",
+  "version": "0.0.0",
+  "description": "Fumadocs components for Designbook documentation",
+  "keywords": [
+    "design-system",
+    "designbook",
+    "docs",
+    "documentation",
+    "fumadocs",
+    "mdx",
+    "react"
+  ],
+  "homepage": "https://github.com/bangseongbeom/designbook",
+  "bugs": "https://github.com/bangseongbeom/designbook/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangseongbeom/designbook.git",
+    "directory": "packages/fumadocs"
+  },
+  "license": "MIT",
+  "author": "방성범 (Bang Seongbeom) <bangseongbeom@gmail.com>",
+  "type": "module",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "dev": "tsc --watch",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "devDependencies": {
+    "@designbook/eslint-config": "workspace:*",
+    "@designbook/typescript-config": "workspace:*",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^10.12.0",
+    "fumadocs-ui": "npm:@fumadocs/base-ui@^16.16.2",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "fumadocs-ui": "npm:@fumadocs/base-ui@^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0"
+  }
+}

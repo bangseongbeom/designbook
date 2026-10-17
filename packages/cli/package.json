@@ -1,0 +1,49 @@
+{
+  "name": "@designbook/cli",
+  "version": "0.0.0",
+  "description": "Generate MDX documentation for your components",
+  "keywords": [
+    "cli",
+    "design-system",
+    "designbook",
+    "docs",
+    "documentation",
+    "mdx"
+  ],
+  "homepage": "https://github.com/bangseongbeom/designbook",
+  "bugs": "https://github.com/bangseongbeom/designbook/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bangseongbeom/designbook.git",
+    "directory": "packages/cli"
+  },
+  "license": "MIT",
+  "author": "방성범 (Bang Seongbeom) <bangseongbeom@gmail.com>",
+  "type": "module",
+  "exports": null,
+  "bin": {
+    "designbook": "dist/bin/designbook.js"
+  },
+  "files": [
+    "dist/**",
+    "src/**"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.8.1",
+    "magic-string": "^1.4.3",
+    "mdast-util-from-markdown": "^2.1.0",
+    "shiki": "^4.4.3",
+    "typescript": "7.0.2"
+  },
+  "devDependencies": {
+    "@designbook/eslint-config": "workspace:*",
+    "@designbook/typescript-config": "workspace:*",
+    "@types/node": "^24.19.1",
+    "eslint": "^10.12.0"
+  }
+}
