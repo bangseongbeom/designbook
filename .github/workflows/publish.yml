@@ -99,7 +99,7 @@ jobs:
         run: pnpm install
 
       - name: Build packages
-        run: pnpm run build
+        run: pnpm run build --filter="./packages/*"
 
       - name: Pack packages
         id: pack
